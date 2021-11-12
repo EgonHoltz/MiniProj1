@@ -1,5 +1,7 @@
 <template>
   <div class="aboutMe">
+    <h1>blablabla</h1>
+    <p>akisdbfaisundfoiusnadfoisuandfoiusadf</p>
   </div>
 </template>
 

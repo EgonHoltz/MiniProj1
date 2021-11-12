@@ -1,22 +1,29 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import App from './App.vue'
-import AboutMe from './components/AboutMe.vue'
-import Hello from './components/Hello.vue'
-Vue.use(Router)
+import { createWebHistory, createRouter } from 'vue-router'
+import AboutMe from '../components/AboutMe.vue'
+import HelloWorld from '../components/HelloWorld.vue'
+import PageNotFound from '../components/PageNotFound.vue'
 
-const router = new Router({
-    routes: [
-        {
-            path: '/',
-            name: 'aboutMe',
-            component: AboutMe
-        }
-    ]
+const routes = [
+    {
+        path: "/",
+        name: "AboutMe",
+        component: AboutMe
+    },
+    {
+        path: "/hello",
+        name: "HelloWorld",
+        component: HelloWorld
+    },
+    {
+        path: '/:catchAll(.*)*',
+        name: "PageNotFound",
+        component: PageNotFound,
+    },
+]
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes
 })
 
-new Vue({
-    el: '#app',
-    render: h => h(App),
-    router
-})
+export default router
