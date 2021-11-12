@@ -46,6 +46,7 @@ ul li{
     color: white;
     display: inline-flex;
     margin-left: 1rem;
+    font-style: none;
 
 }
 </style>

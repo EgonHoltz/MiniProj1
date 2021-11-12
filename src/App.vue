@@ -5,24 +5,14 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-//import AboutMe from './components/AboutMe.vue'
-//import MyActivities from './components/MyActivities.vue'
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
-//import Hobbies from './components/Hobbies.vue'
-//import Index from './components/Index.vue' 
 
 export default {
   name: 'App',
   components: {
-    //HelloWorld,
-    //AboutMe,
-    //MyActivities,
     Footer,
     Header,
-    //Hobbies,
-    //Index
   }
 }
 </script>

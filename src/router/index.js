@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import AboutMe from '../components/AboutMe.vue'
-import HelloWorld from '../components/HelloWorld.vue'
+import MyActivities from '../components/MyActivities'
+import Hobbies from '../components/Hobbies'
 import PageNotFound from '../components/PageNotFound.vue'
 
 const routes = [
@@ -10,9 +11,14 @@ const routes = [
         component: AboutMe
     },
     {
-        path: "/hello",
-        name: "HelloWorld",
-        component: HelloWorld
+        path: "/activities",
+        name: "MyActivities",
+        component: MyActivities
+    },
+    {
+        path: "/hobbies",
+        name: "Hobbies",
+        component: Hobbies
     },
     {
         path: '/:catchAll(.*)*',
