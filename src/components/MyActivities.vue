@@ -1,5 +1,6 @@
 <template>
-  
+    <div class="myActivities">
+  </div>
 </template>
 
 <script>

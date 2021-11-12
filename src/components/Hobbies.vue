@@ -1,5 +1,6 @@
 <template>
-  
+    <div class="hobbies">
+  </div>
 </template>
 
 <script>

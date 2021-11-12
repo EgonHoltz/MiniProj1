@@ -1,30 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Header>
+  <Header />
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <Footer>
+  <Footer />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import AboutMe from './components/AboutMe.vue'
-import MyActivities from './components/MyActivities.vue'
+//import AboutMe from './components/AboutMe.vue'
+//import MyActivities from './components/MyActivities.vue'
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
-import Hobbies from './components/Hobbies.vue'
-import Index from './components/Index.vue' 
-
+//import Hobbies from './components/Hobbies.vue'
+//import Index from './components/Index.vue' 
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    AboutMe,
-    MyActivities,
+    //AboutMe,
+    //MyActivities,
     Footer,
     Header,
-    Hobbies,
-    Index
+    //Hobbies,
+    //Index
   }
 }
 </script>
