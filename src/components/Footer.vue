@@ -1,9 +1,10 @@
 <template>
     <footer>
         <div class ="footer-content">
-            <h2>Contactos</h2>
-            <p><a href="https://github.com/EgonHoltz">GitHub</a></p>
-            <p><a href="https://www.linkedin.com/in/egonholtz/">LinkedIn</a></p>
+            <div id="footer-icons">
+                <a href="https://github.com/EgonHoltz"><div class="footer-rounded-img" id="github-img"></div></a>
+                <a href="https://www.linkedin.com/in/egonholtz/"><div class="footer-rounded-img" id="linkedin-img"></div></a>
+            </div>
             <p class="copy">Copyright &copy; {{year}}</p>
         </div>
     </footer>
@@ -20,6 +21,14 @@ export default {
 </script>
 
 <style>
+#github-img{
+  background-image: url(../assets/github.png) !important;
+  margin-right: 1em;
+}
+#linkedin-img{
+  background-image: url(../assets/linkedin.jpg) !important;
+  margin-right: 1em;
+}
 footer {
 	position: fixed;
 	bottom: 0;
@@ -56,5 +65,16 @@ footer a{
 footer a:hover{
     color: rgb(97, 96, 96);
 }
-
+.footer-rounded-img {
+  display: inline-block;
+  width: 3em;
+  height: 3em;  
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat:no-repeat;
+  border-radius: 50%;
+}
+#footer-icons{
+    padding: 0.35em;
+}
 </style>
