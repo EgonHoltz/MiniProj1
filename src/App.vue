@@ -1,6 +1,10 @@
 <template>
   <Header />
-  <router-view />
+  <div id="body-content">
+    <div id="content-wrap">
+      <router-view />
+    </div>
+  </div>
   <Footer />
 </template>
 
@@ -18,12 +22,34 @@ export default {
 </script>
 
 <style>
+*{
+    margin: 0;
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+#body-content {
+	width: 100%;
+  min-height: 100vh;
+  height: 100%;
+	background-size: auto;
+	margin: 0 auto;
+	background-color: #454a94;
+  color: white;
+  
+}
+#content-wrap{
+  padding-bottom: 6rem;
+  padding-top: 4em;
+  width: 40%;
+  margin: 0 auto;
 }
 </style>
