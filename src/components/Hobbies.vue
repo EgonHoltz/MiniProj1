@@ -9,24 +9,26 @@
         e tive meus primeiros contactos com PHP, HTML, SQL Server, reversão de código C++ e configurações de rede.</p>
       <br />
       <p>Os jogos que mais me divertem hoje são:</p>
-      <ul>
-        <li>Counter Strike GO (Zumbie Mod)</li>
-        <li>Cities Skylines</li>
-        <li>Watch dogs</li>
-        <li>Red Dead Redemption 2</li>
-        <li>Lords Mobile</li>
-      </ul>
+      <div class="list-imgs">
+        <div class="flex-divide">
+          <div class="squared-img" id="cs-img"><div class="transbox"> Counter Strike GO (Zumbie Mod)</div></div>
+          <div class="squared-img" id="citiessky-img"><div class="transbox">Cities Skylines</div></div>
+          <div class="squared-img" id="rdr-img"><div class="transbox">Red Dead Redemption 2</div></div>
+          <div class="squared-img" id="lords-img"><div class="transbox">Lords Mobile</div></div>
+        </div>
+      </div>
       <br />
       <h2>Culinária</h2>
       <p>Isso foi um gosto que comecei a pegar cá em Portugal. Aqui tive tempo de poder experimentar e fazer diferentes receitas, pelas qual posso dizer:</p>
-      <ul>
-        <li>Bacalhau com natas</li>
-        <li>Bolas de Berlin</li>
-        <li>Strogonoff de lombo</li>
-        <li>Picanha ao forno</li>
-        <li>Tarte de limão</li>
-      </ul>
-
+      <div class="list-imgs">
+        <div class="flex-divide">
+          <div class="squared-img" id="bacalhau-img"><div class="transbox">Bacalhau com natas</div></div>
+          <div class="squared-img" id="bolas-img"><div class="transbox">Bolas de Berlin</div></div>
+          <div class="squared-img" id="picanha-img"><div class="transbox">Picanha ao forno</div></div>
+          <div class="squared-img" id="tarte-img"><div class="transbox">Tarte de limão</div></div>
+          <div class="squared-img" id="strogonoff-img"><div class="transbox">Strogonoff de lombo</div></div>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -37,9 +39,51 @@ export default {
 </script>
 
 <style>
-.hobbies ul li {
-  text-align: left;
-  width: 100%;
-  padding: 5px
+#bacalhau-img{
+  background-image: url(../assets/bacalhau.jpg) !important;
+  margin: 1em;
 }
+#bolas-img{
+  background-image: url(../assets/bolas.jpg) !important;
+  margin: 1em;
+}
+#picanha-img{
+  background-image: url(../assets/picanha.jpg) !important;
+  margin: 1em;
+}
+#strogonoff-img{
+  background-image: url(../assets/strogonoff.jpg) !important;
+  margin: 1em;
+}
+#tarte-img{
+  background-image: url(../assets/tarte.jpg) !important;
+  margin: 1em;
+}
+#cs-img{
+  background-image: url(../assets/cs.jpg) !important;
+  margin: 1em;
+}
+#citiessky-img{
+  background-image: url(../assets/citiessky.jpg) !important;
+  margin: 1em;
+}
+#rdr-img{
+  background-image: url(../assets/rdr.jpeg) !important;
+  margin: 1em;
+}
+#lords-img{
+  background-image: url(../assets/lords.jpeg) !important;
+  margin: 1em;
+}
+.flex-devide{
+  flex-grow: 2
+}
+.list-imgs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
 </style>

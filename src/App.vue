@@ -49,7 +49,7 @@ body {
 #content-wrap{
   padding-bottom: 6rem;
   padding-top: 4em;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
 }
 .rounded-img {
@@ -61,5 +61,24 @@ body {
   background-repeat:no-repeat;
   border-radius: 50%;
   box-shadow: 2px 2px 2px 2px rgb(255, 255, 255)
+}
+.squared-img {
+  display: inline-block;
+  width: 18em;
+  height: 12em;  
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat:no-repeat;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px 2px rgb(44, 44, 44);
+  line-height: 3em;
+  text-shadow: 1px 1px black;
+}
+.squared-img .transbox {
+  margin: 0;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+  background-color: #000000;
+  opacity: 0.6;
 }
 </style>
