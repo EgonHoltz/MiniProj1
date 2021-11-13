@@ -52,4 +52,14 @@ body {
   width: 40%;
   margin: 0 auto;
 }
+.rounded-img {
+  display: inline-block;
+  width: 8em;
+  height: 8em;  
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat:no-repeat;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255)
+}
 </style>

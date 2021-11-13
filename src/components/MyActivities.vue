@@ -17,8 +17,33 @@
         <li>→ Suporte a equipe BA, fornecendo esclarecimentos às regras de negócio em relação ao que está presente no código da aplicação</li>
         <li>→ Levantamento de requisitos além dos já verificados pela equipe BA para detalhar as soluções</li>
       </ul>
+      <div class="imgs-frame">
+        <div class="rounded-img" id="java-img"></div>
+        <div class="rounded-img" id="extjs-img"></div>
+        <div class="rounded-img" id="oracle-img"></div>
+      </div>
+      <div>
+        <div class="rounded-img" id="wtx-img"></div>
+        <div class="rounded-img" id="jenkins-img"></div>
+      </div>
+      <br /><br />
       <h2>Estudos</h2>
       <p>Além do meu trabalho, estou a estudar para o Mestrado em Engenharia Informática e Tecnologia Web, ao qual me dedico nas horas em que não estou a trabalhar</p>
+      <br />
+      <p>As matérias ao qual estou a me dedicar neste momento são:</p>
+      <ul>
+        <li>→ Arquitetura e Padrões de Softwares</li>
+        <li>→ Deep Learning Aplicado</li>
+        <li>→ Integração de Sistemas</li>
+        <li>→ Investigação operacional</li>
+        <li>→ Programação Web Avançada</li>
+      </ul>
+      <p>Onde estou a utilizar as tecnologias abaixo.</p>
+      <div class="imgs-frame">
+        <div class="rounded-img" id="vue-img"></div>
+        <div class="rounded-img" id="nodejs-img"></div>
+        <div class="rounded-img" id="python-img"></div>
+      </div>
   </div>
 </template>
 
@@ -33,5 +58,37 @@ export default {
   text-align: left;
   width: 100%;
   padding: 5px
+}
+#vue-img{
+  background-image: url(../assets/vue.png) !important;
+  margin-right: 1em;
+}
+#nodejs-img{
+  background-image: url(../assets/nodejs.png) !important;
+  margin-right: 1em;
+}
+#python-img{
+  background-image: url(../assets/python.jpg) !important;
+  margin-right: 1em;
+}
+#java-img{
+  background-image: url(../assets/java.jpg) !important;
+  margin-right: 1em;
+}
+#extjs-img{
+  background-image: url(../assets/extjs.jpg) !important;
+  margin-right: 1em;
+}
+#oracle-img{
+  background-image: url(../assets/oracle.jpeg) !important;
+  margin-right: 1em;
+}
+#wtx-img{
+  background-image: url(../assets/wtx.jpg) !important;
+  margin-right: 1em;
+}
+#jenkins-img{
+  background-image: url(../assets/jenkins.jpg) !important;
+  margin-right: 1em;
 }
 </style>

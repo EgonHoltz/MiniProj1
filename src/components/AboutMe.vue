@@ -1,6 +1,6 @@
 <template>
   <div class="aboutMe">
-    <img src="../assets/myself.jpeg" />
+    <div class="rounded-img" id="myself"></div>
     <h1>Egon Holtz</h1>
     <h2>IT Analyst | Open Banking | Payments methods | Leadership | M.Sc. student</h2>
     <p>Olá, prazer, sou Egon Holtz. Obrigado pela visita. <br />
@@ -21,12 +21,21 @@
     <p>Full-stack developer - PrimeIT (2019-Actualmente)</p>
     <p>Tech Lead - Redecard (2014-2019)</p>
     <p>Treinee - Tata Consultancy Service (2012-2014)</p>
+    <div class="imgs-frame">
+      <div class="rounded-img" id="tata-img"></div>
+      <div class="rounded-img" id="redecard-img"></div>
+      <div class="rounded-img" id="prime-img"></div>
+    </div>
     <br />
     <h2>Formação Acadêmica:</h2>
     <p>Mestrado em Engenharia Informática e Tecnologia Web - UTAD & Uab (2021-2023)</p>
     <p>Tecnólogo em Análise e desenvolvimento de Sistemas - FATEC (2010-2012)</p>
     <p>Técnico em Informática - ETEC (2007-2008)</p>
-
+    <div class="imgs-frame">
+      <div class="rounded-img" id="etec-img"></div>
+      <div class="rounded-img" id="fatec-img"></div>
+      <div class="rounded-img" id="utad-img"></div>
+    </div>
   </div>
 </template>
 
@@ -37,5 +46,40 @@ export default {
 </script>
 
 <style>
+#prime-img{
+  background-image: url(../assets/primeIT.jpeg) !important;
+  margin-right: 1em;
+}
+#redecard-img{
+  background-image: url(../assets/rede.jpeg) !important;
+  margin-right: 1em;
+}
+#tata-img{
+  background-image: url(../assets/tata.jpeg) !important;
+  margin-right: 1em;
+}
+#etec-img{
+  background-image: url(../assets/etec.jpeg) !important;
+  margin-right: 1em;
+}
+#fatec-img{
+  background-image: url(../assets/fatec.jpeg) !important;
+  margin-right: 1em;
+}
+#utad-img{
+  background-image: url(../assets/utad.jpeg) !important;
+  margin-right: 1em;
+}
+.imgs-frame {
+  width: 80%;
+  padding: 2em;
+  margin: 0 auto;
+}
+#myself {
+  background-image: url(../assets/myself.jpeg);
+  width: 15em !important;
+  height: 15em !important;
+}
+
 
 </style>
